@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amrskk</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #0d1117;
+        color: #e6edf3;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        letter-spacing: -0.5px;
+      }
+
+      .subtitle {
+        color: #8b949e;
+        margin-bottom: 48px;
+        font-size: 1rem;
+      }
+
+      .cards {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        width: 100%;
+      }
+
+      .card {
+        background: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 12px;
+        padding: 28px 32px;
+        width: 340px;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.2s, transform 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .card:hover {
+        border-color: #58a6ff;
+        transform: translateY(-3px);
+      }
+
+      .card-tag {
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #58a6ff;
+      }
+
+      .card-title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .card-desc {
+        font-size: 0.9rem;
+        color: #8b949e;
+        line-height: 1.6;
+      }
+
+      .card-arrow {
+        margin-top: auto;
+        padding-top: 16px;
+        font-size: 1.1rem;
+        color: #58a6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Amrskk</h1>
+    <p class="subtitle">Projects &amp; Notes</p>
+
+    <div class="cards">
+      <a class="card" href="https://amrskk.github.io/svm-under-the-hood/">
+        <span class="card-tag">Machine Learning</span>
+        <span class="card-title">Support Vector Machines — Under the Hood</span>
+        <p class="card-desc">
+          Geometry, convex optimization, duality, kernel methods, and extensions
+          to SVC and SVR — with full mathematical derivations.
+        </p>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card" href="https://amrskk.github.io/svm-under-the-hood/notreadme">
+        <span class="card-tag">ML Project</span>
+        <span class="card-title">MAGIC Gamma Telescope — ABK Team</span>
+        <p class="card-desc">
+          Physics-informed feature engineering, synthetic data generation, and a
+          stacking ensemble for Cherenkov shower classification.
+        </p>
+        <span class="card-arrow">→</span>
+      </a>
+    </div>
+  </body>
+</html>
