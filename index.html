@@ -5,95 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Amrskk</title>
     <style>
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
 
       body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        background: #0d1117;
-        color: #e6edf3;
+        font-family: Georgia, "Times New Roman", serif;
+        background: #fff;
+        color: #000;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 40px 20px;
+        padding: 60px 24px;
       }
 
       h1 {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 8px;
-        letter-spacing: -0.5px;
+        font-size: 1.6rem;
+        font-weight: normal;
+        letter-spacing: 0.02em;
+        margin-bottom: 4px;
       }
 
       .subtitle {
-        color: #8b949e;
-        margin-bottom: 48px;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 56px;
+        font-style: italic;
       }
 
-      .cards {
-        display: flex;
-        gap: 24px;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 800px;
+      .list {
         width: 100%;
-      }
-
-      .card {
-        background: #161b22;
-        border: 1px solid #30363d;
-        border-radius: 12px;
-        padding: 28px 32px;
-        width: 340px;
-        text-decoration: none;
-        color: inherit;
-        transition:
-          border-color 0.2s,
-          transform 0.2s;
+        max-width: 560px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 0;
       }
 
-      .card:hover {
-        border-color: #58a6ff;
-        transform: translateY(-3px);
+      .item {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        padding: 24px 0;
+        border-top: 1px solid #000;
       }
 
-      .card-tag {
+      .item:last-child {
+        border-bottom: 1px solid #000;
+      }
+
+      .item-tag {
         font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: #58a6ff;
+        color: #666;
+        margin-bottom: 6px;
       }
 
-      .card-title {
-        font-size: 1.15rem;
-        font-weight: 700;
-        line-height: 1.3;
+      .item-title {
+        font-size: 1.05rem;
+        font-weight: normal;
+        margin-bottom: 6px;
+        line-height: 1.4;
       }
 
-      .card-desc {
-        font-size: 0.9rem;
-        color: #8b949e;
+      .item-desc {
+        font-size: 0.85rem;
+        color: #444;
         line-height: 1.6;
       }
 
-      .card-arrow {
-        margin-top: auto;
-        padding-top: 16px;
-        font-size: 1.1rem;
-        color: #58a6ff;
+      .item:hover .item-title {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -101,25 +87,23 @@
     <h1>Amrskk</h1>
     <p class="subtitle">Projects &amp; Notes</p>
 
-    <div class="cards">
-      <a class="card" href="https://amrskk.github.io/svm-under-the-hood/">
-        <span class="card-tag">Machine Learning</span>
-        <span class="card-title">Support Vector Machines — Under the Hood</span>
-        <p class="card-desc">
+    <div class="list">
+      <a class="item" href="https://amrskk.github.io/svm-under-the-hood/">
+        <div class="item-tag">Machine Learning</div>
+        <div class="item-title">Support Vector Machines — Under the Hood</div>
+        <p class="item-desc">
           Geometry, convex optimization, duality, kernel methods, and extensions
           to SVC and SVR — with full mathematical derivations.
         </p>
-        <span class="card-arrow">→</span>
       </a>
 
-      <a class="card" href="https://amrskk.github.io/mlfinal/">
-        <span class="card-tag">ML Project</span>
-        <span class="card-title">MAGIC Gamma Telescope — ABK Team</span>
-        <p class="card-desc">
+      <a class="item" href="https://amrskk.github.io/mlfinal/">
+        <div class="item-tag">ML Project</div>
+        <div class="item-title">MAGIC Gamma Telescope — ABK Team</div>
+        <p class="item-desc">
           Physics-informed feature engineering, synthetic data generation, and a
           stacking ensemble for Cherenkov shower classification.
         </p>
-        <span class="card-arrow">→</span>
       </a>
     </div>
   </body>
