@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UMAP — Notes</title>
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+        background: #fff;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        padding: 16px 24px;
+        border-bottom: 1px solid #000;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      header h1 {
+        font-size: 1.05rem;
+        font-weight: normal;
+      }
+
+      header nav {
+        font-size: 0.85rem;
+        display: flex;
+        gap: 16px;
+      }
+
+      header nav a {
+        color: #000;
+      }
+
+      .viewer {
+        flex: 1;
+        width: 100%;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>UMAP — Notes</h1>
+      <nav>
+        <a href="umap-finally.pdf">Download PDF</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+    <iframe class="viewer" src="umap-finally.pdf" title="UMAP Notes"></iframe>
+  </body>
+</html>
